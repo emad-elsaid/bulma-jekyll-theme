@@ -7,6 +7,8 @@ theme: bulma-jekyll-theme
 github:
   owner_url: https://www.github.com/emad-elsaid
   owner_name: Emad Elsaid
+download: https://download link
+tutorial: http://tutorial
 nav:
   - title: Home
     url: /

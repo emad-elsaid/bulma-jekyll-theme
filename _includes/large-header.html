@@ -1,4 +1,4 @@
-<section class="hero is-success is-fullheight">
+<section class="hero is-link is-fullheight">
   <div class="hero-head">
     {% include navbar.html %}
   </div>
@@ -17,6 +17,16 @@
       <h2 class="subtitle">
         {{ site.description | default: site.github.project_tagline }}
       </h2>
+
+      <p>
+        {% if site.download %}
+        <a class="button is-large" href="{{ site.download }}">Download</a>
+        {% endif %}
+
+        {% if site.tutorial %}
+        <a class="button is-link is-large" href="{{ site.tutorial }}">Take the tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
+        {% endif %}
+      </p>
     </div>
   </div>
   {% endif %}
