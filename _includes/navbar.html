@@ -1,0 +1,36 @@
+<header class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        {{ site.title | default: site.github.repository_name }}
+      </a>
+      <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenuHeroC" class="navbar-menu">
+      <div class="navbar-end">
+
+        {% for item in site.nav %}
+        <a class="navbar-item" href="{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% endfor %}
+
+        {% if site.show_downloads %}
+        <span class="navbar-item">
+          <a class="button is-success is-inverted" href="{{ site.github.repository_url }}">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Download</span>
+          </a>
+        </span>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</header>
