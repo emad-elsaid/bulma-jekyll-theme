@@ -1,0 +1,16 @@
+title: Bulma Theme
+logo: /assets/img/logo.png
+description: Bulma Theme for github pages
+show_downloads: true
+google_analytics:
+theme: bulma-jekyll-theme
+github:
+  owner_url: https://www.github.com/emad-elsaid
+  owner_name: Emad Elsaid
+nav:
+  - title: Home
+    url: /
+  - title: Documentation
+    url: /docs
+  - title: Examples
+    url: /examples
